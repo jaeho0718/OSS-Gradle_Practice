@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>Vercel app</title>
+        <title>SLASH | 토스 테크 클론</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
-        <h1>Vercel app</h1>
-        <p>Current time: <span id="datetime"></span></p>
+        <nav class="nav">
+            <div class="nav-inner">
+                <div class="nav-logo">SLASH</div>
+                <ul class="nav-menu">
+                    <li><a href="#simplicity">SIMPLICITY</a></li>
+                    <li><a href="#subscribe">구독하기</a></li>
+                    <li><a href="#jobs" class="nav-btn">채용 바로가기</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="hero">
+                <h1>진짜 모두를 위한 금융,<br>토스의 기술과 디자인</h1>
+                <p class="hero-desc">2,800만 명이 쓰는 앱에서 7,000명의 경험까지 챙기기 위해,<br>토스는 어떤 노력을 하고 있을까요?</p>
+                <button class="cta-btn">토스 테크 둘러보기</button>
+            </section>
+            <section class="card-list">
+                <div class="card">
+                    <h2>모두가 유저를 만나는 순간까지</h2>
+                    <p>일하느라 사용자를 만날 시간이 없다면, 점심시간은 어떨까요? 식사하며 사용자의 목소리를 듣는 토스 팀의 이야기를 들려드릴게요.</p>
+                    <span class="card-date">2025.05.23</span>
+                </div>
+                <div class="card">
+                    <h2>우리가 몰랐던 시각 장애인의 UX</h2>
+                    <p>시각 장애인이 토스를 더 쉽게 쓰려면, 무엇이 달라져야 할까요? 리서치를 통해 얻은 세 가지 인사이트를 공유할게요.</p>
+                    <span class="card-date">2025.05.23</span>
+                </div>
+                <div class="card">
+                    <h2>토스 그래픽을 10초 만에 그리는 AI</h2>
+                    <p>인간이 3일 걸려 만드는 3D 그래픽을 10초 만에 만든다니, 퀄리티까지 따라올 수 있을까요?</p>
+                    <span class="card-date">2025.05.23</span>
+                </div>
+                <div class="card">
+                    <h2>경험을 수치화하는 방법</h2>
+                    <p>사용자가 원하는 기능을 잘 찾는지, 정성적인 경험도 이제 수치로 말할 수 있어요. 토스만의 새로운 기준으로요.</p>
+                    <span class="card-date">2025.05.23</span>
+                </div>
+            </section>
+            <section class="datetime-section">
+                <p>현재 시각: <span id="datetime"></span></p>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-inner">
+                <span>㈜비바리퍼블리카 Copyright © Viva Republica, Inc. All Rights Reserved.</span>
+            </div>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
