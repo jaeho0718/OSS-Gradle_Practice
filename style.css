@@ -1,3 +1,92 @@
-body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px;}
-h1 { color: #f71a1a; }
-p { color: #666; }
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
+body {
+  font-family: 'Pretendard Variable', 'Apple SD Gothic Neo', Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  color: #3182f6;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+p, label, .gr-label {
+  color: #6b7684;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.gradio-container, .gr-block, .gr-box, .gr-panel, .gr-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(49,130,246,0.07);
+  padding: 32px 24px;
+  margin: 24px 0;
+  border: none;
+}
+
+input, select, textarea, .gr-input, .gr-textbox, .gr-slider input[type=range] {
+  font-family: inherit;
+  font-size: 1.1rem;
+  border: 1.5px solid #e5e8eb;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #f4f6fa;
+  transition: border 0.2s;
+  outline: none;
+  margin-bottom: 12px;
+}
+input:focus, select:focus, textarea:focus, .gr-input:focus, .gr-textbox:focus {
+  border: 1.5px solid #3182f6;
+  background: #fff;
+}
+
+.gr-slider input[type=range] {
+  accent-color: #3182f6;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.gr-button, button, .gradio-button {
+  background: #3182f6;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  box-shadow: 0 2px 8px 0 rgba(49,130,246,0.10);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 12px;
+}
+.gr-button:hover, button:hover, .gradio-button:hover {
+  background: #2563eb;
+  box-shadow: 0 4px 16px 0 rgba(49,130,246,0.13);
+}
+
+.gr-html, .gr-markdown, .gr-output, .gr-textbox-output {
+  font-size: 1.3rem;
+  color: #222;
+  background: #f4f6fa;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-top: 10px;
+  min-height: 48px;
+  box-shadow: none;
+}
+
+::-webkit-input-placeholder { color: #b0b8c1; }
+::-moz-placeholder { color: #b0b8c1; }
+:-ms-input-placeholder { color: #b0b8c1; }
+::placeholder { color: #b0b8c1; }
